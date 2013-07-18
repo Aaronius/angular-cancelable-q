@@ -24,7 +24,7 @@ cancelable
 // any of the following lines:
 uncancelableDeferred.resolve('hello, world'); // prints 'resolved with: hello, world'
 uncancelableDeferred.reject('goodbye, world'); // prints 'rejected with reason: goodbye, world'
-cancelable.cancel(); // prints 'resolved with: canceled'
+cancelable.cancel(); // prints 'rejected with reason: canceled'
 cancelable.cancel('nothing to show here'); // prints 'rejected with reason: nothing to show here'
 ```
 
